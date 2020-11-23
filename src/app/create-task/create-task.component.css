@@ -1,0 +1,49 @@
+.detail-section {
+    padding: 1em 2em 2em 2em;
+    border: none;
+    /* border-top: 1px solid #000; */
+    overflow-x: hidden;
+}
+.detail-section {
+    text-align: center;
+}
+.detail-section .notify {
+    /* float: left; */
+    color: red;
+    text-align: start;
+    margin-bottom: 1em;
+}
+.detail-section .btn-update {
+    background-color: green;
+    color: #fff;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0 10px 0;
+    border: none;
+} 
+input.title {
+    width: 98.5%;
+    padding-left: 10px;
+    padding-right: 0;
+    line-height: 2em;
+    margin-bottom: 2em;
+}
+textarea {
+    width: 99.5%;
+}
+.row {
+    display: flex;
+}
+.row .column {
+    flex: 50%;
+}
+.row .column input {
+    width: 80%;
+    float: left;
+}
+.row .column select {
+    width: 80%;
+    float: right;
+    margin-right: 0px;
+    height: 25px;
+}

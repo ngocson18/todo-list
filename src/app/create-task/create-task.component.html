@@ -1,0 +1,21 @@
+<div class="detail-section">
+    <app-message></app-message>
+    <span class="ntask">New Task</span>
+    <input type="text" [(ngModel)]= "title" class="title" required>
+    <!-- <div *ngIf="show" class="notify">Không được để trống</div> -->
+    <div style="float: left" >Description</div>
+    <textarea rows="5" [(ngModel)] = "description"></textarea>
+    <div class="row">
+        <div class="column">
+            <input name="title" class="form-control" [(ngModel)]="due" type="date" value="22/11/2020" [min]="minDate">
+        </div>
+        <div class="column">
+            <select [(ngModel)]="level">
+                <option value="low">low</option>
+                <option value ="normal" selected>normal</option>
+                <option value="high">high</option>
+            </select>
+        </div>
+    </div>
+    <input (click)="addTodo()" type="button" class="btn-update" value="Add">
+</div>

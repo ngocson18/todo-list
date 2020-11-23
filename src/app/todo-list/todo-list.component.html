@@ -1,0 +1,43 @@
+<div class="content">
+    <ul>
+        <app-message></app-message>
+        <div class="row">
+            <div class="left">
+                <input class="search-bar" #search type="text" (keyup.enter)="getTodosByTitle()" placeholder="Tìm kiếm">
+            </div>
+            <div class="right">
+                <input class="submit" type="submit" (click)="getTodosByTitle()" value="Tìm kiếm">
+            </div>
+        </div>
+        <li *ngFor="let item of todoList; let i = index">
+            <div class="master-section">
+                <input #status type="checkbox"  (change)="completeTodo(item, $event.target.checked)">
+                <label>{{item.title}}</label> <br>
+                <input (click) ="removeTodo(i)" type="button" class="btn-delete" value="Delete">
+                <input (click)="open(i)" type="button" class="btn-detail" value="Detail"><br>
+            </div>
+            <div *ngIf="display===i" class="detail-section">
+                <input #title type="text" class="title" value={{item.title}}>
+                <span>Description</span>
+                <textarea #description rows="5">{{item.description}}</textarea>
+                <div class="row">
+                    <div class="column">
+                        <input #due type="date" value={{item.due}} min="23/11/2020">
+                    </div>
+                    <div class="column">
+                        <select>
+                            <option>{{item.level}}</option>
+                            <option #level *ngFor="let level of Level" value={{level.value}}>{{level.value}}</option>
+                        </select>
+                    </div>
+                </div>
+                <input (click)="updateTodo(item)" type="button" class="btn-update" value="Update">
+            </div>
+        </li>
+        <div class="bulk" *ngIf="show">
+            <label>Bulk Action: </label> <br>
+            <input class="btn-delete" type="button" (click)="deleteMultiple()" value="Delete">
+            <input type="button" class="btn-detail" value="Done">
+        </div>
+    </ul>
+</div>

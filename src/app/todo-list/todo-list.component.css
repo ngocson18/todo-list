@@ -1,0 +1,145 @@
+@media only screen and (max-width: 480px){
+    .btn-delete, .btn-detail {
+        position: relative;
+        top: 0.5em;
+        left: -1em;
+        float: unset;
+    }
+    .content {
+        width: 90%;
+    }
+    .bulk input {
+        position: relative;
+        top: 1em;
+        /* float: right; */
+    }
+    .bulk {
+        height: 60px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px){
+    .btn-delete, .btn-detail {
+        position: relative;
+        top: -1.5em;
+        left: 2em;
+        float: unset;
+    }
+    .btn-update {
+        width: 30%;
+    }
+    .bulk input {
+        position: relative;
+        top: 0em;
+        left: -1em;
+        /* float: right; */
+    }
+}
+
+ul li {
+    list-style-type: none;
+    border: 1px solid #000000;
+    margin-bottom: 2em ;
+}
+ul li .master-section {
+    margin: 0em 0em 0em 0em;
+    /* padding-bottom: 2em; */
+    padding: 10px 30px 20px 10px;
+    border-bottom: 0px solid #000;
+}
+ul li label {
+    margin-left: 10px;
+}
+.btn-detail {
+    background-color: dodgerblue;
+    border-radius: 3px;
+    padding: 7px 25px 7px 25px;
+    color: #ffffff;
+    border: none;
+    /* position: absolute;
+    top: 8.5em;
+    left: 26em; */
+    float: right;
+}
+.btn-delete {
+    background-color:crimson;
+    border-radius: 3px;
+    padding: 7px 25px 7px 25px;
+    color: #ffffff;
+    border: none;
+    float: right;
+    /* position: relative;
+    top: -1.5em;
+    left: 40em; */
+    margin-left: 10px;
+}
+ul li .detail-section {
+    padding: 1em 2em 2em 2em;
+    border: none;
+    border-top: 1px solid #000;
+    overflow-x: hidden;
+}
+ul li .detail-section .btn-update {
+    background-color: green;
+    color: #fff;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0 10px 0;
+    border: none;
+} 
+ul li input.title {
+    width: 98.5%;
+    padding-left: 10px;
+    padding-right: 0;
+    line-height: 2em;
+    margin-bottom: 2em;
+}
+ul li textarea {
+    width: 99.5%;
+}
+.row {
+    display: flex;
+    
+}
+.row .left {
+    flex: 70%;
+}
+.row .column {
+    flex: 50%;
+}
+.row .right {
+    flex: 30%;
+}
+.row .column input {
+    width: 80%;
+}
+.row .column select {
+    width: 80%;
+    float: right;
+    margin-right: 0px;
+    height: 25px;
+}
+.row .submit {
+    width: 100%;
+    float: right;
+    height: 25px;
+}
+.row .search-bar {
+    width: 100%;
+    float: left;
+    height: 19px;
+}
+.bulk {
+    width: 100%;
+    background-color:grey;
+    height: 60px;
+}
+.bulk input {
+    margin-top: -5px;
+    float: right;
+}
+.bulk label {
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+}
