@@ -50,6 +50,10 @@ ul li .master-section {
 ul li label {
     margin-left: 10px;
 }
+.content {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
 .btn-detail {
     background-color: dodgerblue;
     border-radius: 3px;
@@ -122,12 +126,12 @@ ul li textarea {
 .row .submit {
     width: 100%;
     float: right;
-    height: 25px;
+    /* height: 25px; */
 }
 .row .search-bar {
     width: 100%;
     float: left;
-    height: 19px;
+    /* height: 19px; */
 }
 .bulk {
     width: 100%;
